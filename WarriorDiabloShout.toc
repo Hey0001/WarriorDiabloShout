@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: WarriorDiabloShout
+## Notes: Plays Diablo II sounds for Warrior shouts. /wds
+## Author: Hey0001, AI
+## Version: 1.0
+## SavedVariables: WarriorDiabloShoutDB
+
+## IconTexture: Interface\Addons\WarriorDiabloShout\Icons\wds_icon_tiny
+
+WarriorDiabloShout.lua
