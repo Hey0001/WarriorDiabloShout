@@ -1,10 +1,18 @@
 ## Interface: 16001
+
 ## Title: WarriorDiabloShout
-## Notes: Plays Diablo II sounds for Warrior shouts. /wds
 ## Author: Hey0001, AI
-## Version: 1.0
-## SavedVariables: WarriorDiabloShoutDB
+## Version: 1.0.1
+
+## Notes: Plays Diablo II sounds for Warrior shouts. /wds
+## Notes-deDE: Spielt Diablo II-Sounds für Kriegerrufe ab. /wds
+## Notes-esES: Reproduce sonidos de Diablo II para los gritos de Guerrero. /wds
+## Notes-esMX: Reproduce sonidos de Diablo II para los gritos del Guerrero. /wds
+## Notes-ptBR: Toca sons de Diablo II para os gritos de Guerreiro. /wds
+## Notes-frFR: Joue les sons de Diablo II pour les cris de Guerrier. /wds
 
 ## IconTexture: Interface\Addons\WarriorDiabloShout\Icons\wds_icon_tiny
+
+## SavedVariables: WarriorDiabloShoutDB
 
 WarriorDiabloShout.lua

@@ -341,11 +341,15 @@ f:SetScript("OnEvent", function(self, event, ...)
             if spellID and spellToGroup[spellID] and spellID ~= 12317 then
                 PlayConfiguredSound(spellToGroup[spellID])
             else
-                -- Fallback check by Spell Name (captures health potion item casts)
+                -- Fallback check by Spell Name (captures health potion item casts accurately)
                 local spellName = GetSpellNameByID(spellID)
                 if spellName then
                     local lowerName = spellName:lower()
-                    if lowerName:find("potion") or lowerName:find("healing") or lowerName:find("soin") then
+                    
+                    -- Explicitly exclude professions, bandages, and first aid
+                    local isBandageOrFirstAid = lowerName:find("bandage") or lowerName:find("first aid") or lowerName:find("premiers soins")
+                    
+                    if not isBandageOrFirstAid and lowerName:find("potion") then
                         PlayConfiguredSound("Health Potions")
                     elseif soundConfig[spellName] then
                         PlayConfiguredSound(spellName)
